@@ -147,7 +147,7 @@ Won't remove Upgrade Button.
 '@`n
 }
 
-$ch = Read-Host -Prompt "Change Alpha UI back to Old UI. (BTS only supports Old UI). (Y/N) "
+$ch = Read-Host -Prompt "Change Alpha UI back to Old UI. (This only supports Old UI). (Y/N) "
 if ($ch -eq 'y'){
     move $SpotifyApps\xpui.spa $SpotifyApps\xpui.spa.bak >$null 2>&1
     Copy-Item -LiteralPath $uipat -Destination "$SpotifyApps"
