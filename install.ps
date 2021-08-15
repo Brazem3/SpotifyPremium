@@ -51,7 +51,6 @@ try {
   exit
 }
 
-Write-Host 'Downloading latest patch (chrome_elf.zip)...'`n
 $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
